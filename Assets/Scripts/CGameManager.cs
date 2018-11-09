@@ -55,6 +55,9 @@ public class CGameManager : MonoBehaviour {
             }
             ballRd.velocity = Vector3.zero;
             ballRd.AddForce(distance.normalized * (power * 5f), ForceMode.Impulse);
+
+            ballRd.AddTorque(Vector3.up * 100f);
+
             clickMousePoint = Vector3.zero;
         }
 
